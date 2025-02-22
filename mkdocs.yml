@@ -13,6 +13,9 @@ theme:
     - navigation.expandable # Make top navigation expandable
     - navigation.index
     - navigation.center
+    - navigation.footer
+    
+    
   font:
     text: 'Roboto'
   palette:
@@ -25,6 +28,7 @@ extra_javascript:
 plugins:
   - search
   - awesome-pages  # Automatically generates nav structure
+  - blog
 
 markdown_extensions:
   - toc:
@@ -33,3 +37,9 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list  # Enables CSS classes in Markdown
   - md_in_html  # Allows raw HTML inside Markdown
+
+
+extra:
+  generator: false
+
+copyright: Text is available under the Creative Commons Attribution-ShareAlike License.

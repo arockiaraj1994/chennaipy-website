@@ -1,4 +1,4 @@
-/* Removed unused CSS classes */
+/* Removed unused CSS classes and refactored the CSS to center the logo and overlap GitHub and search buttons */
 :root {
     --md-primary-fg-color: #007bff; /* Change primary color */
     --md-accent-fg-color: #673ab7; /* Change accent color */
@@ -144,9 +144,12 @@ h1 {
     align-items: center;
 }
 
-.logo-section img {
-    height: 32px;
+.md-header__button.md-logo {
+    height: 50px; /* Increase the logo size */
     margin-right: 10px;
+    background-color: white; /* Change background to white */
+    padding: 5px; /* Add padding to make it look bigger */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
 }
 
 /* Responsive styles */
@@ -196,7 +199,7 @@ h1 {
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change to row to make links in a single line */
     gap: 5px;
     font-size: 14px;
 }
@@ -219,4 +222,56 @@ h1 {
 .hero p {
     font-size: 16px;
     color: #666;
+}
+
+/* Adjusting the header layout to center the logo and overlap GitHub and search buttons */
+.md-header__inner.md-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.md-header__button.md-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.md-header__button.md-search,
+.md-header__button.md-github {
+    position: absolute;
+    right: 1rem;
+}
+
+.md-header__source {
+    display: none;
+}
+
+@media screen and (max-width: 76.1875em) {
+    .md-header__inner.md-grid {
+        padding: 0 0.8rem;
+    }
+    
+    .md-header__button.md-logo {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .md-header__title {
+        display: none;
+    }
+}
+
+/* Center align the tabs in the header */
+.md-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ensure proper spacing between tabs */
+.md-tabs__item {
+    margin: 0 1rem;
 }
