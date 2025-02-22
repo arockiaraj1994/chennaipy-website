@@ -13,13 +13,15 @@ theme:
     - navigation.expandable # Make top navigation expandable
     - navigation.index
     - navigation.center
-    
   font:
-    text: 'bold'
+    text: 'Roboto'
   palette:
-    primary: 'center'
-    accent: 'center'
-  
+    primary: 'indigo'
+    accent: 'indigo'
+extra_css:
+  - 'css/custom.css'
+extra_javascript:
+  - 'js/custom.js'
 plugins:
   - search
   - awesome-pages  # Automatically generates nav structure

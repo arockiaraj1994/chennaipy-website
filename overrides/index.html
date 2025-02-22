@@ -1,35 +1,72 @@
 {% extends "base.html" %}
 
-<style>
-  .md-nav__link {
-    font-weight: bold;
-    text-align: center;
-  }
-</style>
-
 {% block content %}
-  <div class="hero">
-    <h1>Welcome to Chennaipy</h1>
-    <p>Chennaipy is a Python user-group, where Pythonistas in and around Chennai come together to share their knowledge and to contribute to the promotion of Python.</p>
+
+<div class="hero">
+  <h1>Welcome to Chennaipy</h1>
+  <p>Chennaipy is a Python user group where Pythonistas in and around Chennai come together to share knowledge and contribute to the promotion of Python.</p>
+</div>
+
+<div class="social-links">
+  <div class="social-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Mailing List">
+    <h3>Mailing List</h3>
+    <div class="links">
+      <a href="https://mail.python.org/mailman/listinfo/chennaipy">Join</a>
+      <span>|</span>
+      <a href="#">Archives</a>
+    </div>
   </div>
-  <div class="upcoming-events">
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li><a href="https://in.pycon.org/2023/">PyCon India 2023, Hyderabad</a></li>
-    </ul>
+
+  <div class="social-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/8462/8462596.png" alt="Meetup">
+    <h3>Meetup</h3>
+    <div class="links">
+      <a href="http://www.meetup.com/chennaipy/">Join</a>
+      <span>|</span>
+      <a href="#">Members</a>
+    </div>
   </div>
-  <div class="find-us">
-    <h2>Find us</h2>
-    <ul>
-      <li><a href="http://www.meetup.com/chennaipy/">Meetup.com</a></li>
-      <li><a href="https://mail.python.org/mailman/listinfo/chennaipy">Mailing list</a></li>
-      <li><a href="http://twitter.com/chennaipy">Twitter</a></li>
-      <li><a href="https://github.com/Chennaipy">GitHub</a></li>
-      <li><a href="https://chennaipy.slack.com">Slack</a></li>
-    </ul>
+
+  <div class="social-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    <h3>GitHub</h3>
+    <div class="links">
+      <a href="https://github.com/Chennaipy">Projects</a>
+      <span>|</span>
+      <a href="#">Teams</a>
+    </div>
   </div>
-  <div class="contributing">
-    <h2>Contributing</h2>
-    <p>See our <a href="CONTRIBUTING.md">contribution guidelines</a></p>
+
+  <div class="social-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+    <h3>Twitter</h3>
+    <div class="links">
+      <a href="http://twitter.com/chennaipy">Follow</a>
+      <span>|</span>
+      <a href="#">Tweets</a>
+    </div>
   </div>
+
+  <div class="social-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" alt="Slack">
+    <h3>Slack</h3>
+    <div class="links">
+      <a href="https://chennaipy.slack.com">Join</a>
+      <span>|</span>
+      <a href="#">Discuss</a>
+    </div>
+  </div>
+
+  <div class="social-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Chennai PyCon Mailing List">
+    <h3>Chennai PyCon Mailing List</h3>
+    <div class="links">
+      <a href="#">Join</a>
+      <span>|</span>
+      <a href="#">Archives</a>
+    </div>
+  </div>
+</div>
+
 {% endblock %}

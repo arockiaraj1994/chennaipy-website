@@ -1,22 +1,222 @@
+/* Removed unused CSS classes */
 :root {
     --md-primary-fg-color: #007bff; /* Change primary color */
     --md-accent-fg-color: #673ab7; /* Change accent color */
-  }
-  
-  h1 {
+}
+
+h1 {
     color: red !important; /* Example: Make all h1 headers red */
-  }
-  
-  .custom-banner {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+}
+
+/* Custom CSS to override material theme styles for the header bar */
+.md-header {
+    background-color: #3f51b5; /* Change header background color */
+    color: #ffffff; /* Change header text color */
+}
+
+.md-header-nav__title {
+    font-size: 1.5rem; /* Change header title font size */
+}
+
+.md-header-nav__button {
+    color: #ffffff; /* Change header button color */
+}
+
+/* Customizing Material theme's header grid */
+.md-header__inner.md-grid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+
+.md-header__title {
     text-align: center;
-    font-size: 24px;
-  }
-  
-  .md-footer {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.md-header__button {
+    position: absolute;
+    left: 1.5rem;
+}
+
+.md-search {
+    position: absolute;
+    right: 1.5rem;
+}
+
+.md-header__source {
+    position: absolute;
+    right: 4rem;
+}
+
+/* Ensure proper spacing in the header */
+.md-header__inner.md-grid > * {
+    flex: none;
+}
+
+@media screen and (max-width: 76.1875em) {
+    .md-header__inner.md-grid {
+        padding: 0 0.8rem;
+    }
+    
+    .md-header__button.md-logo {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .md-header__title {
+        display: none;
+    }
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: var(--md-primary-fg-color) !important;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+/* New Header Layout Styles */
+.site-header {
+    background-color: var(--md-primary-fg-color);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-wrapper {
+        height: auto;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-item h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     font-size: 14px;
-  }
-  
+}
+
+.links a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #666;
+}
