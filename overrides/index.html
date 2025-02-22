@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+<style>
+  .md-nav__link {
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+
+{% block content %}
+  <div class="hero">
+    <h1>Welcome to Chennaipy</h1>
+    <p>Chennaipy is a Python user-group, where Pythonistas in and around Chennai come together to share their knowledge and to contribute to the promotion of Python.</p>
+  </div>
+  <div class="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li><a href="https://in.pycon.org/2023/">PyCon India 2023, Hyderabad</a></li>
+    </ul>
+  </div>
+  <div class="find-us">
+    <h2>Find us</h2>
+    <ul>
+      <li><a href="http://www.meetup.com/chennaipy/">Meetup.com</a></li>
+      <li><a href="https://mail.python.org/mailman/listinfo/chennaipy">Mailing list</a></li>
+      <li><a href="http://twitter.com/chennaipy">Twitter</a></li>
+      <li><a href="https://github.com/Chennaipy">GitHub</a></li>
+      <li><a href="https://chennaipy.slack.com">Slack</a></li>
+    </ul>
+  </div>
+  <div class="contributing">
+    <h2>Contributing</h2>
+    <p>See our <a href="CONTRIBUTING.md">contribution guidelines</a></p>
+  </div>
+{% endblock %}

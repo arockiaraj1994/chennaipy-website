@@ -1,0 +1,33 @@
+site_name: ChennaiPY
+site_url: https://chennaipy.org/
+repo_url: https://github.com/chennaipy
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/logo.png
+  hide_site_name: true
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.expandable # Make top navigation expandable
+    - navigation.index
+    - navigation.center
+    
+  font:
+    text: 'bold'
+  palette:
+    primary: 'center'
+    accent: 'center'
+  
+plugins:
+  - search
+  - awesome-pages  # Automatically generates nav structure
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - attr_list  # Enables CSS classes in Markdown
+  - md_in_html  # Allows raw HTML inside Markdown
