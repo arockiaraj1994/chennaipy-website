@@ -21,10 +21,19 @@ theme:
   palette:
     primary: 'indigo'
     accent: 'indigo'
+#extra_css:
+#  - css/custom.css
+#  - https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css
+#  - https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css
+
 extra_css:
-  - 'css/custom.css'
+  - css/custom.css
+  
 extra_javascript:
-  - 'js/custom.js'
+  - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/js/patternfly.min.js
+
 plugins:
   - search
   - awesome-pages  # Automatically generates nav structure
