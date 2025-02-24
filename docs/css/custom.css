@@ -298,3 +298,38 @@ h1 {
     color: #666;
     font-size: 0.8rem;
 }
+
+/* CTA Button styles */
+.cta {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 0 20px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid rgba(0, 123, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, var(--md-primary-fg-color), #4a90e2);
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+    border-color: transparent;
+}

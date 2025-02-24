@@ -10,6 +10,10 @@ hide:
   <p>Chennaipy is a Python user group where Pythonistas in and around Chennai come together to share knowledge and contribute to the promotion of Python.</p>
 </div>
 
+<div class="cta">
+    <a href="#" class="button">Submit Talk Talk</a>
+</div>
+
 <div class="grid-container">
     <div class="grid-section section1">
         <div class="section-header">
